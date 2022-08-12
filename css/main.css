@@ -1,0 +1,53 @@
+/* Stylesheet for the employer data table */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+aside {
+	width: 20%;
+	background-color: tan;
+	position: fixed;
+	left: 10%;
+	height: 300px;
+	z-index: 1;
+}
+
+aside h3 {
+	height: 50px;
+	width: 100%;
+	background-color: azure;
+	text-align: center;
+}
+
+form div {
+	width: 85%;
+	margin: auto;
+	line-height: 10px;
+}
+
+section {
+	position: relative;
+	margin-left: auto;
+	width: 70%;
+	background-color: tan;
+}
+
+.table {
+	background-color: aliceblue;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid black;
+	padding-left: 5px;
+}

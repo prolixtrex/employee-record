@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="with=device-with, initial-scale=1.0">
+		<title>User Record</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<header>
+			
+		</header>
+		<main>
+			<div class="container">
+				<aside>
+					<div>
+						<h3>Add or Update User Information</h3>
+						<form>
+							<div>
+								<label>ID No.</label>
+								<input type="text" id="idNum" oninput="checkIdLength();">
+							</div>
+							<div>
+								<label>First Name</label>
+								<input type="text" id="firstName">
+							</div>
+							<div>
+								<label>Last Name</label>
+								<input type="text" id="lastName">
+							</div>
+							<div>
+								<label>Age</label>
+								<input type="text" id="age">
+							</div>
+							<div>
+								<label>Department</label>
+								<input type="text" id="department">
+							</div>
+							<div>
+								<label>Job Role</label>
+								<input type="text" id="jobRole">
+							</div>
+							<div>
+								<label>Level</label>
+								<input type="text" id="level">
+							</div>
+							<div>
+								<input type="submit" id="submit" value="Add Record" onclick="userRecords(event);">
+								<input type="reset" name="Clear">
+								<input type="submit" id="delete" style="display:none;" value="Delete Record" onclick="deleteRecord(event);">
+								<input type="submit" id="deleteAll" value="Delete All Records" onclick="deleteAllRecords(event);">
+							</div>
+						</form>
+					</div>
+				</aside>
+
+				<section>
+					<div>
+						<table class="table">
+							<caption><h2>Employee Data</h2></caption>
+							<thead class="thead">
+								<tr class="trow">
+									<th>S/N</th>
+									<th>ID</th>
+									<th>FIRST NAME</th>
+									<th>LAST NAME</th>
+									<th>AGE</th>
+									<th>DEPARTMENT</th>
+									<th>JOB ROLE</th>
+									<th>LEVEL</th>
+								</tr>
+							</thead>
+							<tbody id="tBody">
+								<!-- <tr id="tRow">
+									
+								</tr> -->
+							</tbody>
+						</table>
+					</div>
+				</section>
+			</div>
+			<footer>
+				
+			</footer>
+		</main>
+
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
